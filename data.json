@@ -1,0 +1,30 @@
+{
+  "passages": {
+    "easy": [
+      "The quick brown fox jumps over the lazy dog near the old barn.",
+      "She sells seashells by the seashore on sunny summer days.",
+      "A journey of a thousand miles begins with a single step forward.",
+      "Time flies like an arrow when you are having fun with friends.",
+      "The early bird catches the worm before the sun rises high.",
+      "Practice makes perfect when you work hard every single day.",
+      "All good things come to those who wait with great patience.",
+      "Home is where the heart is and family gathers together warmly."
+    ],
+    "medium": [
+      "The magnificent aurora borealis danced across the northern sky, painting ethereal ribbons of green and purple light that mesmerized all who witnessed nature's spectacular display.",
+      "Despite numerous obstacles and setbacks, the determined entrepreneur persevered through challenging circumstances, ultimately transforming her innovative vision into a thriving global enterprise.",
+      "Ancient civilizations developed sophisticated astronomical knowledge, constructing elaborate observatories to track celestial movements and predict seasonal changes with remarkable accuracy.",
+      "The symphony orchestra's performance captivated the audience with its harmonious blend of strings, woodwinds, brass, and percussion creating an unforgettable musical experience.",
+      "Technological advancements continue revolutionizing communication methods, enabling instantaneous global connectivity that fundamentally transforms how societies interact and share information.",
+      "Environmental conservation efforts require collaborative international cooperation, sustainable resource management, and widespread public awareness to protect our planet's delicate ecosystems."
+    ],
+    "hard": [
+      "The philosopher's intricate epistemological arguments challenged conventional wisdom, proposing that subjective perception fundamentally shapes our understanding of objective reality—a concept that sparked considerable controversy among contemporary scholars.",
+      "Quantum mechanics revolutionized physics by introducing probabilistic interpretations of subatomic behavior, contradicting classical determinism and revealing nature's inherent uncertainty at microscopic scales through phenomena like superposition and entanglement.",
+      "The Renaissance period witnessed unprecedented artistic, scientific, and intellectual flourishing; polymaths like Leonardo da Vinci exemplified this era's spirit by seamlessly integrating diverse disciplines—anatomy, engineering, painting—into cohesive masterworks.",
+      "Neuroplasticity research demonstrates the brain's remarkable capacity for reorganization throughout life: synaptic connections continuously form, strengthen, or weaken based on experiences, challenging long-held assumptions about cognitive rigidity in adulthood.",
+      "Cryptocurrency's decentralized blockchain technology disrupts traditional financial systems by enabling peer-to-peer transactions without intermediaries, though volatility, regulatory uncertainty, and environmental concerns regarding energy consumption remain significant challenges.",
+      "The anthropocene epoch—characterized by humanity's profound geological impact—presents existential dilemmas: balancing technological progress with ecological sustainability requires reimagining economic paradigms, consumption patterns, and our fundamental relationship with Earth's biosphere."
+    ]
+  }
+}

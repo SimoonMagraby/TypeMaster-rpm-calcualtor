@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Test and improve your typing speed with our modern typing speed test app. Track your WPM, accuracy, and beat your personal best!"
+    />
+    <meta
+      name="keywords"
+      content="typing test, typing speed, WPM, words per minute, typing practice"
+    />
+    <title>TypeMaster - Typing Speed Test</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">⌨️</div>
+        <h1>TypeMaster</h1>
+        <p class="subtitle">Test your typing speed and accuracy</p>
+      </header>
+
+      <!-- Controls -->
+      <section class="controls">
+        <button id="start-btn" class="btn btn-primary">Start Test</button>
+
+        <div class="control-group">
+          <button
+            id="difficulty-easy"
+            class="btn btn-secondary active"
+            data-difficulty="easy"
+          >
+            Easy
+          </button>
+          <button
+            id="difficulty-medium"
+            class="btn btn-secondary"
+            data-difficulty="medium"
+          >
+            Medium
+          </button>
+          <button
+            id="difficulty-hard"
+            class="btn btn-secondary"
+            data-difficulty="hard"
+          >
+            Hard
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button
+            id="mode-timed"
+            class="btn btn-secondary active"
+            data-mode="timed"
+          >
+            Timed (60s)
+          </button>
+          <button
+            id="mode-passage"
+            class="btn btn-secondary"
+            data-mode="passage"
+          >
+            Passage
+          </button>
+        </div>
+
+        <button id="restart-btn" class="btn btn-secondary">🔄 Restart</button>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="stat-card">
+          <div class="stat-label">WPM</div>
+          <div id="wpm-display" class="stat-value">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Accuracy</div>
+          <div id="accuracy-display" class="stat-value">100%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Time</div>
+          <div id="time-display" class="stat-value">60s</div>
+        </div>
+      </section>
+
+      <!-- Typing Area -->
+      <section class="typing-container" id="typing-container">
+        <div id="passage" class="passage disabled">
+          Click "Start Test" to begin...
+        </div>
+        <input
+          type="text"
+          id="input-field"
+          class="input-hidden"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+        />
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Built with ❤️ for typing enthusiasts |
+          <a href="#" class="footer-link">View Documentation</a>
+        </p>
+      </footer>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <div id="celebration-emoji" class="celebration">🎉</div>
+          <h2 id="modal-title" class="modal-title">Test Complete!</h2>
+          <p id="modal-subtitle" class="modal-subtitle">Great job!</p>
+        </div>
+
+        <div id="personal-best-section" class="personal-best hidden">
+          <div class="personal-best-label">🏆 Personal Best</div>
+          <div class="personal-best-value">
+            <span id="personal-best-wpm">0</span> WPM
+          </div>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-item">
+            <div class="result-label">WPM</div>
+            <div id="result-wpm" class="result-value">0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Accuracy</div>
+            <div id="result-accuracy" class="result-value">0%</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Correct</div>
+            <div id="result-correct" class="result-value">0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-label">Incorrect</div>
+            <div id="result-incorrect" class="result-value">0</div>
+          </div>
+        </div>
+
+        <button
+          id="close-modal-btn"
+          class="btn btn-primary"
+          style="width: 100%"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
